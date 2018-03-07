@@ -5,11 +5,7 @@ public class Ex12_Front3
 	// the front is whatever is there. Return a new string which is 3 copies of the front.
 	public String front3(String str)
 	{
-		String front;
-		if (str.length() < 3)
-			front = str;
-		else
-			front = str.substring(0, 3);
+		String front = str.length() < 3 ? str : str.substring(0, 3);
 		return front + front + front;
 	}
 }
