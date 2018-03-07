@@ -7,11 +7,8 @@ public class Ex21_delDel
 	{
 		if (str.length() < 4)
 			return str;
+		
 		String detect = str.substring(1, 4);
-		if (detect.equals("del"))
-		{
-			return str.charAt(0) + str.substring(4);
-		}
-		return str;
+		return detect.equals("del") ? str.charAt(0) + str.substring(4) : str;
 	}
 }
