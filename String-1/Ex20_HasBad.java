@@ -5,12 +5,7 @@ public class Ex20_HasBad
 	// "xbadxx" but not "xxbadxx". The string may be any length, including 0. Note: use .equals() to compare 2 strings.
 	public boolean hasBad(String str)
 	{
-		if (str.length() < 3)
-			return false;
-
-		if (str.substring(0, 3).equals("bad"))
-			return true;
-
-		return str.length() >= 4 && str.substring(1, 4).equals("bad");
+		int index = str.indexOf("bad");
+		return index >= 0 && index <= 1;
 	}
 }
