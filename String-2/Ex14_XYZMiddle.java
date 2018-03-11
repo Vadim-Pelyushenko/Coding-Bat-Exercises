@@ -17,12 +17,9 @@ public class Ex14_XYZMiddle
 		// 2a - 4 <= 2*ind <= 2a - 2
 		// ind = a - 2 or a - 1
 		// ind = str.length()/2 - 2 or str.length()/2 - 1
-		if (str.length() < 3)
-			return false;
-		int mid = str.length() / 2;
-		if (str.length() % 2 == 0)
-			return str.substring(mid - 1, mid + 2).equals("xyz") || str.substring(mid - 2, mid + 1).equals("xyz");
-		else
-			return str.substring(mid - 1, mid + 2).equals("xyz");
+		if(str.length() < 3)
+		    return false;
+		int ind = str.length() / 2 - 1;
+		return str.substring(ind, ind+3).equals("xyz") || (str.length() % 2 == 0 && str.substring(ind-1,ind+2).equals("xyz"));
 	}
 }
