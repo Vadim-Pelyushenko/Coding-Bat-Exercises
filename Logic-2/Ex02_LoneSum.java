@@ -5,15 +5,12 @@ public class Ex02_LoneSum
 	// it does not count towards the sum.
 	public int loneSum(int a, int b, int c)
 	{
-		int sum;
 		if (a == b)
-			sum = c == a ? 0 : c;
+			return c == a ? 0 : c;
 		else if (b == c)
-			sum = a;
+			return a;
 		else if (a == c)
-			sum = b;
-		else
-			sum = a + b + c;
-		return sum;
+			return b;
+		return a + b + c;
 	}
 }
