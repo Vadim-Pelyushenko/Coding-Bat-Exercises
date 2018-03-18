@@ -7,9 +7,7 @@ public class Ex27_Pre4
 	public int[] pre4(int[] nums)
 	{
 		int i;
-		for (i = 0; nums[i] != 4; i++)
-			;
-
+		for (i = 0; nums[i] != 4; i++);
 		int[] list = new int[i--];
 		while (i >= 0)
 			list[i] = nums[i--];
