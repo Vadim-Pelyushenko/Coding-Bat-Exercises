@@ -6,5 +6,3 @@ GitHub as part of my workflow.
 I have begun doing these exercises March 7th 2018.
 
 All the exercises(317 of them) have been completed as of March 27th 2018.
-
-Just testing out forks and stuff
